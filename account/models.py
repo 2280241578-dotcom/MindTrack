@@ -65,6 +65,7 @@ class DailyRecord(models.Model):
     # user_id（外键 → 指向 User.user_id   Foreign key → pointing to User.user_id）
     user = models.ForeignKey(
         User,
+        # user,
         on_delete=models.CASCADE,
         db_column='user_id'   # 数据库列名就叫 user_id
     )
